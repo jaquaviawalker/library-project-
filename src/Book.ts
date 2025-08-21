@@ -1,7 +1,7 @@
 /**
  * Represents a book in the library system.
  */
-class Book {
+export class Book {
   /** The title of the book. */
   public title: string;
   /** The author of the book. */
@@ -90,5 +90,9 @@ class Book {
    */
   public getAge(): number {
     return new Date().getFullYear() - this.yearPublished;
+  }
+
+  public getTitle(): string {
+    return this.title;
   }
 }
